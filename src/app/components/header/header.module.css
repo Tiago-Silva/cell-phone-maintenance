@@ -1,0 +1,51 @@
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1% 9%;
+    z-index: 10000;
+    background: var(--background-secondary);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .logo img {
+
+}
+
+.header .logo a {
+    font-weight: bolder;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.header .logo a span {
+    color: var(--primary-color);
+}
+
+.header .navbar .contact-menu {
+    display: none;
+}
+
+.header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.header .navbar a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px) scale(1.3);
+}
