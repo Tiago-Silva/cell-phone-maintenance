@@ -7,7 +7,7 @@ const Header = () => {
 
             <div className={styles.logo}>
                 <img src="/foguete.svg" alt="Foguete" />
-                <a href="#">Landing <span>Pages</span></a>
+                <a href="#">Manutenção de <span>Celulares</span></a>
             </div>
 
 
