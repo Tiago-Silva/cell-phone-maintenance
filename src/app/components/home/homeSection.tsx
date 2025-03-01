@@ -5,7 +5,7 @@ import Button from "@/app/components/button/button";
 
 const HomeSection = () => {
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id={'home'}>
 
             <div className={styles.left} >
                 <h3 className={styles.title}>
