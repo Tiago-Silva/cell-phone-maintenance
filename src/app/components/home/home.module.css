@@ -1,0 +1,28 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.left .title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.left .title span {
+    color: var(--primary-color);
+}
+
+.right {
+
+}
