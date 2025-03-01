@@ -1,0 +1,19 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 6rem;
+    /*padding: 2.5rem 4rem;*/
+    background: var(--primary-color);
+    box-shadow: 0 0 70px rgba(1, 255, 61, 0.37);
+    border-radius: 10px;
+    cursor: pointer;
+
+    text-align: center;
+    color: var(--background-primary);
+    font-size: 2rem;
+    font-weight: 900;
+}
