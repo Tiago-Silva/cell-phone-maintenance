@@ -14,7 +14,7 @@ const Header = () => {
             <nav className={styles.navbar}>
                 <a href="#home">Home</a>
                 <a href="#about">Curso</a>
-                <a href="#project">View</a>
+                <a href="#treeSection">View</a>
                 <a href="#skill">Conteúdo</a>
                 <a href="#contact">Bônus</a>
             </nav>
