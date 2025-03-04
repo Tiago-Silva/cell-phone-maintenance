@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Bonus = () => {
     return (
-        <section className={styles.bonusContent}>
+        <section className={styles.bonusContent} id={'bonus'}>
 
             <h3 className={styles.title}>4 bônus exclusivos</h3>
 
