@@ -68,7 +68,6 @@ const Bonus = () => {
                 </div>
             </div>
 
-            <hr className={styles.line}></hr>
         </section>
     );
 };
