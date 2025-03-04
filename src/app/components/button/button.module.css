@@ -16,4 +16,9 @@
     color: var(--background-primary);
     font-size: 2rem;
     font-weight: 900;
+    gap: 15px;
+}
+
+.container:hover {
+    filter: brightness(0.5);
 }
