@@ -3,6 +3,7 @@ import Header from "@/app/components/header/header";
 import HomeSection from "@/app/components/home/homeSection";
 import CourseInformationSection from "@/app/components/courseInformationSection";
 import TreeSection from "@/app/components/treeSection/treeSection";
+import Bonus from "@/app/components/bonus/bonus";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
           <HomeSection />
           <CourseInformationSection />
           <TreeSection />
+          <Bonus />
       </main>
     </div>
   );
