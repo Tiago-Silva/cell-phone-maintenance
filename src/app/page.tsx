@@ -4,6 +4,7 @@ import HomeSection from "@/app/components/home/homeSection";
 import CourseInformationSection from "@/app/components/courseInformationSection";
 import TreeSection from "@/app/components/treeSection/treeSection";
 import Bonus from "@/app/components/bonus/bonus";
+import Price from "@/app/components/price/price";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <CourseInformationSection />
           <TreeSection />
           <Bonus />
+          <Price />
       </main>
     </div>
   );
