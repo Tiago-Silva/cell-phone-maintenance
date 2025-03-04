@@ -1,12 +1,34 @@
 
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     gap: 3rem;
+    background-color: var(--background-secondary);
+    margin-left: -11%;
+    padding: 0 9%;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,
+    rgba(1, 255, 61, 0) 0%,
+    rgba(1, 255, 61, 0.7) 50%,
+    rgba(1, 255, 61, 0) 100%
+    );
+    pointer-events: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .title {
