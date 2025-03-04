@@ -14,7 +14,7 @@ const HomeSection = () => {
                 <h4 className={styles.subtitle}>
                     Um método único, exclusivo e completo, com o passo a passo para você transformar a manutenção de celulares em um novo serviço ou até mesmo sua nova fonte de renda.
                 </h4>
-                <Button />
+                <Button title={'Garantir minha vaga'} />
             </div>
 
             <div className={styles.right} >
