@@ -15,8 +15,8 @@ const Header = () => {
                 <a href="#home">Home</a>
                 <a href="#about">Curso</a>
                 <a href="#treeSection">View</a>
+                <a href="#bonus">Bônus</a>
                 <a href="#skill">Conteúdo</a>
-                <a href="#contact">Bônus</a>
             </nav>
 
         </header>
