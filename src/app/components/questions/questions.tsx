@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './questions.module.css';
-import {FaChevronRight, FaRegQuestionCircle, FaWhatsapp} from "react-icons/fa";
+import {FaRegQuestionCircle, FaWhatsapp} from "react-icons/fa";
 import Accordion from "@/app/components/accordion/accordion";
 
 interface FaqItem {
@@ -33,7 +33,7 @@ const faqItems: FaqItem[] = [
 
 const Questions: React.FC = () => {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} greenStartLine grayEndLine`}>
 
             <div className={styles.left}>
                 <FaRegQuestionCircle className={styles.icon}/>
@@ -53,7 +53,7 @@ const Questions: React.FC = () => {
 
             <div className={styles.faqList}>
                 {faqItems.map((item, index) => (
-                    <Accordion item={item} index={index} />
+                    <Accordion item={item} index={index}/>
                 ))}
             </div>
         </div>
