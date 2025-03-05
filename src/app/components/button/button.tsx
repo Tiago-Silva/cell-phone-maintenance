@@ -18,7 +18,7 @@ const Button: React.FC<Props> = ({
     return (
         <button className={styles.container} style={{ width, height }}>
             {title}
-            {Icon && <Icon />}
+            {Icon && <Icon className={styles.icon} />}
         </button>
     );
 };
