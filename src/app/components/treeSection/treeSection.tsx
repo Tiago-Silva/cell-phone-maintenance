@@ -21,7 +21,8 @@ const images = [
     "v1_762.png",
     "v1_764.png",
     "v1_766.png",
-    "v1_768.png"
+    "v1_768.png",
+    "v1_769.png"
 ];
 
 const TreeSection = () => {
