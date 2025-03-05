@@ -5,7 +5,7 @@ import Button from "@/app/components/button/button";
 
 const Price = () => {
     return (
-        <section className={styles.container}>
+        <section className={`${styles.container} greenStartLine grayEndLine`}>
 
             <h2 className={styles.title}>Escolha sua melhor opção</h2>
 
