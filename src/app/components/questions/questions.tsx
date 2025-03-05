@@ -1,8 +1,7 @@
-'use client';
-
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './questions.module.css';
 import {FaChevronRight, FaRegQuestionCircle, FaWhatsapp} from "react-icons/fa";
+import Accordion from "@/app/components/accordion/accordion";
 
 interface FaqItem {
     question: string;
@@ -33,12 +32,6 @@ const faqItems: FaqItem[] = [
 ];
 
 const Questions: React.FC = () => {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-    const toggleItem = (index: number): void => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
-
     return (
         <div className={styles.container}>
 
@@ -60,21 +53,7 @@ const Questions: React.FC = () => {
 
             <div className={styles.faqList}>
                 {faqItems.map((item, index) => (
-                    <div
-                        key={index}
-                        className={`${styles.faqItem} ${openIndex === index ? styles.open : ''}`}
-                    >
-                        <button
-                            className={styles.faqQuestion}
-                            onClick={() => toggleItem(index)}
-                        >
-                            <FaChevronRight className={`${styles.faIcon} ${openIndex === index ? styles.open : ''}`}/>
-                            {item.question}
-                        </button>
-                        <div className={styles.faqAnswer}>
-                            {item.answer}
-                        </div>
-                    </div>
+                    <Accordion item={item} index={index} />
                 ))}
             </div>
         </div>
