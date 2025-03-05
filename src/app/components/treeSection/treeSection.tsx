@@ -26,7 +26,7 @@ const images = [
 
 const TreeSection = () => {
     return (
-        <section className={styles.container} id={'treeSection'}>
+        <section className={`${styles.container} greenStartLine greenEndLine`} id={'treeSection'}>
             <h2 className={styles.title}>Conheça tudo que você vai aprender no curso</h2>
 
             <Swiper
