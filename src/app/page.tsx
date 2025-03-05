@@ -7,6 +7,7 @@ import Bonus from "@/app/components/bonus/bonus";
 import Price from "@/app/components/price/price";
 import Guarantee from "@/app/components/guarantee/guarantee";
 import Questions from "@/app/components/questions/questions";
+import About from "@/app/components/about/about";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Price />
           <Guarantee />
           <Questions />
+          <About />
       </main>
     </div>
   );
