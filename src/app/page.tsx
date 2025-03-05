@@ -8,21 +8,23 @@ import Price from "@/app/components/price/price";
 import Guarantee from "@/app/components/guarantee/guarantee";
 import Questions from "@/app/components/questions/questions";
 import About from "@/app/components/about/about";
+import Footer from "@/app/components/footer/footer";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <Header />
-      <main className={styles.main}>
-          <HomeSection />
-          <CourseInformationSection />
-          <TreeSection />
-          <Bonus />
-          <Price />
-          <Guarantee />
-          <Questions />
-          <About />
-      </main>
-    </div>
-  );
+    return (
+        <div className={styles.page}>
+            <Header/>
+            <main className={styles.main}>
+                <HomeSection/>
+                <CourseInformationSection/>
+                <TreeSection/>
+                <Bonus/>
+                <Price/>
+                <Guarantee/>
+                <Questions/>
+                <About/>
+            </main>
+            <Footer/>
+        </div>
+    );
 }
