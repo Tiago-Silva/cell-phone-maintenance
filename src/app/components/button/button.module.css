@@ -22,3 +22,8 @@
 .container:hover {
     filter: brightness(0.5);
 }
+
+.icon {
+    font-size: 1.5rem;
+    opacity: .7;
+}
