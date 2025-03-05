@@ -6,7 +6,7 @@ import {FaArrowRight} from "react-icons/fa";
 
 const About = () => {
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} greenEndLine`}>
 
             <div className={styles.left} >
                 <Image src={'/homen01.png'} alt={'Homen01'} width={400} height={500} />
