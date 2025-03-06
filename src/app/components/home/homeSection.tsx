@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './home.module.css';
 import Image from "next/image";
 import Button from "@/app/components/button/button";
+import {FaArrowRight} from "react-icons/fa";
 
 const HomeSection = () => {
     return (
@@ -14,7 +15,7 @@ const HomeSection = () => {
                 <h4 className={styles.subtitle}>
                     Um método único, exclusivo e completo, com o passo a passo para você transformar a manutenção de celulares em um novo serviço ou até mesmo sua nova fonte de renda.
                 </h4>
-                <Button title={'Garantir minha vaga'} />
+                <Button title={'Garantir minha vaga'} icon={FaArrowRight}/>
             </div>
 
             <div className={styles.right} >
