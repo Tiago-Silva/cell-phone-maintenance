@@ -12,7 +12,7 @@ interface Props {
 const Button: React.FC<Props> = ({
     title,
     icon: Icon,
-    width = '35rem',
+    width = '25rem',
     height = '6rem',
 }) => {
     return (
