@@ -6,14 +6,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 80px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    gap: 3rem;
+    align-items: center;
+    text-align: center;
 }
 
 .right {
@@ -39,4 +39,38 @@
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary-color);
+}
+
+.imageWrapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .container .right {
+        order: -1;
+    }
+
+    .imageWrapper {
+        width: 90%;
+        max-width: 300px;
+        min-height: 300px; /* Força uma altura mínima */
+        aspect-ratio: 4 / 5; /* Mantém a proporção */
+        overflow: hidden;
+    }
+
+    .right {
+        width: 100%;
+        justify-self: center;
+        align-items: center;
+        text-align: center;
+    }
+
 }
