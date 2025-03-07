@@ -1,6 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .main {
@@ -8,4 +9,5 @@
   flex-direction: column;
   gap: 32px;
   padding: 0 9%;
+  overflow-x: hidden;
 }
