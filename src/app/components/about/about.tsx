@@ -23,7 +23,7 @@ const About = () => {
             <div className={styles.right}>
                 <span>O Expert</span>
                 <h3 className={styles.title}>
-                    Bernardo Caetano
+                    Micael Abreu
                 </h3>
                 <h4 className={styles.subtitle}>
                     Apaixonado por games e empreendedor nato.
