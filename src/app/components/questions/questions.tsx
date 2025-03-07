@@ -53,7 +53,7 @@ const Questions: React.FC = () => {
 
             <div className={styles.faqList}>
                 {faqItems.map((item, index) => (
-                    <Accordion item={item} index={index}/>
+                    <Accordion key={index} item={item} index={index}/>
                 ))}
             </div>
         </div>
