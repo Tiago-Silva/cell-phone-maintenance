@@ -2,17 +2,25 @@ import React from 'react';
 import styles from './about.module.css';
 import Button from "@/app/components/button/button";
 import Image from "next/image";
-import {FaArrowRight} from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
     return (
         <div className={`${styles.container} greenEndLine`}>
 
-            <div className={styles.left} >
-                <Image src={'/homen01.png'} alt={'Homen01'} width={400} height={500} />
+            <div className={styles.left}>
+                <div className={styles.imageWrapper}>
+                    <Image
+                        src={'/homen01.png'}
+                        alt={'Homen01'}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 400px"
+                        style={{ objectFit: 'contain' }}
+                    />
+                </div>
             </div>
 
-            <div className={styles.right} >
+            <div className={styles.right}>
                 <span>O Expert</span>
                 <h3 className={styles.title}>
                     Bernardo Caetano
