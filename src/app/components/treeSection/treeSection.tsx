@@ -37,9 +37,12 @@ const TreeSection = () => {
                 navigation={true}
                 loop={true}
                 breakpoints={{
-                    640: { slidesPerView: 1 },
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
+                    320: { slidesPerView: 1 },
+                    480: { slidesPerView: 2 },
+                    640: { slidesPerView: 3 },
+                    768: { slidesPerView: 4 },
+                    1024: { slidesPerView: 5 },
+                    1280: { slidesPerView: 6 },
                 }}
                 className={styles.swiperContainer}
             >
@@ -59,12 +62,14 @@ const TreeSection = () => {
             <div className={styles.bonus}>+3 bônus incríveis!</div>
 
             <div className={styles.footer}>
-                <h3>
-                    Inscreva-se agora no Landing Pages ABS e comece a criar páginas Fodásticas!
-                </h3>
-                <button className={styles.ctaButton}>
-                    GARANTIR MINHA VAGA →
-                </button>
+                <div className={styles.wrapper}>
+                    <h3>
+                        Inscreva-se agora no Landing Pages ABS e comece a criar páginas Fodásticas!
+                    </h3>
+                    <button className={styles.ctaButton}>
+                        GARANTIR MINHA VAGA →
+                    </button>
+                </div>
             </div>
         </section>
     );
