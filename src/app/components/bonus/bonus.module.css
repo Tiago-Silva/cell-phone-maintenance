@@ -3,7 +3,9 @@
 .bonusContent {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     min-height: 100vh;
     gap: 10rem;
 }
@@ -66,4 +68,21 @@
     font-size: 1.9rem;
     line-height: 1.4;
     color: var(--subtext-color);
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card .bonusImage {
+        order: -1;
+    }
+
+    .bonusText {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
 }
