@@ -39,7 +39,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 120px 40px;
+        padding: 100px 0;
         /*gap: 40px;*/
     }
 
@@ -61,10 +61,14 @@
 
     .right {
         width: 100%;
+        max-width: 800px;
+        min-height: 800px; /* Força uma altura mínima */
+        aspect-ratio: 4 / 5; /* Mantém a proporção */
+        overflow: hidden;
     }
 
     .right img {
-        max-width: 80%;
+        max-width: 100%;
         height: auto;
     }
 }
