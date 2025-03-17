@@ -43,7 +43,7 @@
 
 .imageWrapper {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 500px;
 }
 
@@ -59,9 +59,9 @@
     }
 
     .imageWrapper {
-        width: 90%;
-        max-width: 300px;
-        min-height: 300px; /* Força uma altura mínima */
+        width: 100%;
+        max-width: 500px;
+        min-height: 500px; /* Força uma altura mínima */
         aspect-ratio: 4 / 5; /* Mantém a proporção */
         overflow: hidden;
     }
