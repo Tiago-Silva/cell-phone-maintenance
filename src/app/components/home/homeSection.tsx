@@ -19,7 +19,7 @@ const HomeSection = () => {
             </div>
 
             <div className={styles.right} >
-                <Image src={'/homen01.png'} alt={'Homen01'} width={500} height={700} />
+                <Image src={'/home/home01.png'} alt={'Homen01'} width={800} height={800} />
             </div>
 
         </section>
