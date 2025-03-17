@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './about.module.css';
 import Button from "@/app/components/button/button";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
+import {FaArrowRight} from "react-icons/fa";
 
 const About = () => {
     return (
@@ -11,11 +11,11 @@ const About = () => {
             <div className={styles.left}>
                 <div className={styles.imageWrapper}>
                     <Image
-                        src={'/homen01.png'}
+                        src={'/about/about03.png'}
                         alt={'Homen01'}
                         fill
                         sizes="(max-width: 768px) 100vw, 400px"
-                        style={{ objectFit: 'contain' }}
+                        style={{objectFit: 'contain'}}
                     />
                 </div>
             </div>
@@ -26,14 +26,21 @@ const About = () => {
                     Micael Abreu
                 </h3>
                 <h4 className={styles.subtitle}>
-                    Apaixonado por games e empreendedor nato.
-                    Fundei minha agência em 2016, a Agência Tucano, e trabalho com web design e desenvolvimento há mais de 10 anos.
+                    No dia 29 de março de 2017, começamos nossa jornada com um sonho:
+                    oferecer um serviço de qualidade na manutenção de celulares.
+                    Começamos pequenos, com dedicação e muito aprendizado, e hoje temos orgulho de dizer que somos a
+                    melhor assistência técnica da cidade e região!
                 </h4>
                 <h4 className={styles.subtitle}>
-                    Já tive a oportunidade de criar mais de 100 sites para diversos tipos de segmento. Hoje estou a frente de duas empresas, a Agência Tucano e o Designer ABS.
+                    Mas não paramos por aqui… Agora, queremos compartilhar nosso conhecimento com você
                 </h4>
                 <h4 className={styles.subtitle}>
-                    Se você quer aprender tudo que eu tenho pra te ensinar, se inscreve agora nesse curso incrível!
+                    Se o seu objetivo é aprender a consertar celulares e descobrir os segredos para ter uma assistência
+                    técnica de sucesso, nós estamos aqui para te ajudar. Com anos de experiência, sabemos exatamente o
+                    que funciona e como transformar a manutenção de celulares em um negócio lucrativo.
+
+                    🚀 Está pronto para dar o primeiro passo? Aprenda com quem já percorreu esse caminho e construa sua
+                    própria história de sucesso!
                 </h4>
                 <Button title={'Garantir minha vaga'} icon={FaArrowRight} width={'250px'} height={'45px'}/>
             </div>
