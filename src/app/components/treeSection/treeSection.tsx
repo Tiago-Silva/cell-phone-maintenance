@@ -30,7 +30,7 @@ const TreeSection = () => {
         <section className={`${styles.container} greenStartLine greenEndLine`} id={'treeSection'}>
             <h2 className={styles.title}>Conheça tudo que você vai aprender no curso</h2>
 
-            <div className={styles.swiperContainer}>
+           <div className={styles.swiperContainer}>
                 <Swiper
                     modules={[Navigation]}
                     spaceBetween={10}
@@ -54,6 +54,8 @@ const TreeSection = () => {
                                 width={200}
                                 height={300}
                                 className={styles.image}
+                                priority={index === 0}
+                                style={{ width: '200px', height: '200px' }}
                             />
                         </SwiperSlide>
                     ))}
