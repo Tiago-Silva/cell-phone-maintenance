@@ -2,13 +2,20 @@ import React from 'react';
 import styles from './home.module.css';
 import Button from "@/app/components/button/button";
 import {FaArrowRight} from "react-icons/fa";
+import Image from "next/image";
 
 const HomeSection = () => {
     return (
         <section className={styles.container} id={'home'}>
 
             <div className={styles.bgWrapper}>
-                <img src="/home/land-desk2.png" alt="Background" />
+                <Image
+                    src={'/home/land-desk2.png'}
+                    alt={'Background'}
+                    width={1920}
+                    height={1080}
+                    priority={true}
+                />
             </div>
 
             <div className={styles.left} >
