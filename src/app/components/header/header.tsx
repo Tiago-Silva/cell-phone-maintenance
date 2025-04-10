@@ -1,9 +1,23 @@
-import React from 'react';
+'use client';
+
+import React, {useEffect, useState} from 'react';
 import styles from './header.module.css';
 
 const Header = () => {
+    const [isVisible, setIsVisible] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setIsVisible(scrollPosition < 10);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${!isVisible ? styles.hidden : ''}`}>
 
             <div className={styles.logo}>
                 <img src="/foguete.svg" alt="Foguete" />
