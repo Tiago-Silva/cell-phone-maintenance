@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './home.module.css';
-import Image from "next/image";
 import Button from "@/app/components/button/button";
 import {FaArrowRight} from "react-icons/fa";
 
 const HomeSection = () => {
     return (
         <section className={styles.container} id={'home'}>
+
+            <div className={styles.bgWrapper}>
+                <img src="/home/land-desk2.png" alt="Background" />
+            </div>
 
             <div className={styles.left} >
                 <h3 className={styles.title}>
@@ -16,16 +19,6 @@ const HomeSection = () => {
                     Um método único, exclusivo e completo, com o passo a passo para você transformar a manutenção de celulares em um novo serviço ou até mesmo sua nova fonte de renda.
                 </h4>
                 <Button title={'Garantir minha vaga'} icon={FaArrowRight}/>
-            </div>
-
-            <div className={styles.right} >
-                <Image
-                    src={'/home/home01.png'}
-                    alt={'Homen01'}
-                    width={800}
-                    height={800}
-                    priority={true}
-                />
             </div>
 
         </section>
